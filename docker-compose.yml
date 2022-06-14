@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  Bloben:
+  bloben:
     image: 'bloben/app:latest'
     container_name: Bloben
     labels:
