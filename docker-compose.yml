@@ -4,12 +4,14 @@ services:
   Bloben:
     image: 'bloben/app:latest'
     container_name: Bloben
+    labels:
+      shipyard.route: '/'
     volumes:
       - ./logs:/logs
     env_file:
       - .env
     ports:
-      - '127.0.0.1:8081:80'
+      - 8081:80
     restart: always
 
   databaseBloben:
